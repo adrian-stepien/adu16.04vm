@@ -2,11 +2,11 @@
 - name: Download Anaconda 64-bit
   get_url:
     url: "{{ anaconda_pkg }}"
-    dest: /tmp/Anaconda2-Linux-x86_64.sh
+    dest: /tmp/Anaconda_Linux-x86_64.sh
     mode: 0755
 
 - name: Install Anaconda
-  command: /tmp/Anaconda2-Linux-x86_64.sh -b -p "/home/{{ vm_user }}/anaconda2"
+  command: /tmp/Anaconda_Linux-x86_64.sh -b -p "/home/{{ vm_user }}/anaconda2"
   args:
       creates: /home/{{ vm_user }}/anaconda2
   become: yes

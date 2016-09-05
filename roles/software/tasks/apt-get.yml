@@ -31,11 +31,11 @@
     - bless
     - cmake
     - cowsay
-    - ffmpeg
+    # - ffmpeg
     - g++
     - gcc
     - git
-    - gnome-tweak-tool
+    # - gnome-tweak-tool
     - guake
     - htop
     - imagemagick
